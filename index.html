@@ -1,85 +1,75 @@
-<html>
-    <head>
- <style>
-   .center{
-    text-align: center;
-    margin-top:160px;
-    overflow: hidden;
-     }
-  input{
-      width: 500px;
-      padding:16px 28px;
-      border-radius: 25px;
-      border-color: grey;
-  }
-     li{
-         list-style-type:none;
-         margin:0;
-         padding:10px;
-         float: right;
-     }
-     ol{
-        padding: 14px 16px;
-     }
-    .left{
-        position: relative;
-        bottom: -150px;
-        float:left;
-        }
-        form{
-            text-align: center;
-            margin:auto;
-            border:50px;
-            width: 500px;
-            padding:50px 40px;
-        }
-        button{
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .l1{
-            margin-right: 20px;
-        }
-        .right{
-            position: relative;
-            float: right;
-            bottom: -150px;
-        }
-        .r1{
-            margin-left:300px;
-        }
-        
- </style>       
-    </head>
-    <body>
-        <ol>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Google home page</title>
+      <link rel="stylesheet" href="style.css" />
+      <script
+         src="https://kit.fontawesome.com/e006cf33e3.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+   <body>
+      <nav>
+         <ul>
             <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</li>
-        </ol>
-        <div class="center">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"> 
-        </div>
-        <form action="">
-            <input type="text">
-            <br>
-            <button class="l1" type=submit>Google Search</button>
-            <button type=submit>I'm Feeling Lucky</button>
-        </form>
-        <a class="center r1" href="#">Stay home and let's stop COVID-19 together</a>
-        <div class="left ">
-        <ol>
-           <li><a href="#">How Search works</a></li> 
-           <li><a href="#">About</a></li>
-          <li> <a href="#">Business</a></li>
-           <li><a href="#">Advertising</a> </li>
-        </ol>
-        </div>
-        <div class="right ">
-        <ol>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#"> Privacy</a></li>
-        </ol>
-    </div>
-    </body>
+            <li><a href="#"> Images</a></li>
+            <li><i class="fas fa-th"></i></li>
+            <li><button>Sign in</button></li>
+         </ul>
+      </nav>
+
+      <main>
+         <!-- google image -->
+         <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="google logo"
+         />
+
+         <!-- search icon -->
+         <input type="text" />
+         <i class="fas fa-search"></i>
+
+         <div class="button-container">
+            <button class="search-buttons" type="submit">Google Search</button>
+            <button class="search-buttons" type="submit">I'm Feeling Lucky</button>
+         </div>
+
+         <div class="language-container">
+            Google offered in:
+            <ul>
+               <li><a href="#"> हिन्दी</a></li>
+               <li><a href="#">বাংলা</a></li>
+               <li><a href="#">తెలుగు</a></li>
+               <li><a href="#">मराठी </a></li>
+               <li><a href="#">தமிழ்</a></li>
+               <li><a href="#">ગુજરાતી</a></li>
+               <li><a href="#">ಕನ್ನಡ</a></li>
+               <li><a href="#">മലയാളം</a></li>
+               <li><a href="#">ਪੰਜਾਬੀ</a></li>
+            </ul>
+         </div>
+      </main>
+
+      <footer>
+         <div id="footer-container1">India</div>
+
+         <div id="footer-container2">
+            <ul id="first-footer-section">
+               <li><a href="#">Advertising</a></li>
+               <li><a href="#">Business</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">How</a></li>
+               <li><a href="#">Search works</a></li>
+            </ul>
+
+            <ul id="second-footer-section">
+               <li><a href="#">Privacy</a></li>
+               <li><a href="#">Terms</a></li>
+               <li><a href="#">Settings</a></li>
+            </ul>
+         </div>
+      </footer>
+   </body>
 </html>
